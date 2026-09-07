@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Curly Fries</title>
+
+    <!---bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!---responsive custom css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!---Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="assets/images/logo1.png" class="logo-img" alt=""
+        /></a>
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start bg-dark text-white"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Curly <span>Fries</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!---End Of Navbar-->
+
+    <!---HERO SECTION -->
+    <main class="about-hero">
+      <div class="container text-center">
+        <h1>About Curly <span>Fries</span></h1>
+        <p>Made To Crave</p>
+      </div>
+    </main>
+
+    <main class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Mobile--->
+          <div class="col-12 d-md-none order-1 text-center">
+            <h2>Our <span>Story</span></h2>
+          </div>
+          <div class="col-12 col-md-5 order-2 order-md-1 text-center">
+            <img
+              src="assets/images/logo1.png"
+              class="img-fluid"
+              alt="Curly Fries Logo"
+            />
+          </div>
+
+          <!-- Story Content -->
+          <div class="col-12 col-md-7 order-3 order-md-2">
+            <!-- Desktop Only: Our Story -->
+            <h2 class="d-none d-md-block about-title">
+              Our <span>Story</span>
+            </h2>
+
+            <h4>More Than Just Fries. It's A Craving Worth Satisfying.</h4>
+
+            <p>
+              Curly Fries was created with one simple idea: good food should be
+              delicious, satisfying, and worth coming back for. What started
+              with a love for crispy, golden curly fries grew into a food
+              experience that brings together juicy burgers, tasty fries, and
+              refreshing drinks.
+            </p>
+
+            <p>
+              Every meal we serve is prepared with care and packed with the bold
+              flavors our customers crave. Whether you're grabbing a quick bite,
+              sharing a meal with friends, or simply treating yourself, we're
+              here to make every visit delicious.
+            </p>
+
+            <p>
+              <strong>Come hungry. Leave satisfied.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!---Why Choose Us-->
+    <section class="why-choose">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Why Choose Curly <span>Fries</span>?</h2>
+          <p>Great taste, quality ingredients and flavors made to satisfy.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="feature-card text-center">
+              <div class="feature-icon">🍟</div>
+              <h3>Fresh & Crispy</h3>
+              <p>
+                Golden, crispy fries prepared fresh to give you the perfect
+                crunch in every bite.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card text-center">
+              <div class="feature-icon">🍔</div>
+              <h3>Quality Ingredients</h3>
+
+              <p>
+                We use quality ingredients to create delicious meals you can
+                enjoy with confidence.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card text-center">
+              <div class="feature-icon">❤️</div>
+              <h3>Made To Crave</h3>
+              <p>
+                Bold flavors, satisfying portions and meals made to keep you
+                coming back for more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Testimonials-->
+    <section>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="testimonial-title">What Our Customers Say</h2>
+          <p class="sub-section">
+            Don't just take our word for it. Hear what our customers have to
+            say.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "The curly fries are absolutely amazing! Crispy, tasty and
+                perfectly seasoned. I can't get enough of them!"
+              </p>
+              <h5>Sarah Kusi</h5>
+              <small>Happy Customer</small>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "The burger was juicy and delicious and the fries were
+                incredible. Definitely one of my favorite spots!"
+              </p>
+              <h5>Victoria Dapaah</h5>
+              <small>Happy Customer</small>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Great food, generous portions and amazing flavor. Curly Fries
+                really knows how to satisfy a craving!"
+              </p>
+              <h5>Daniel Teye</h5>
+              <small>Happy Customer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---CTA-->
+    <section class="cta-section">
+      <div class="container text-center">
+        <h2>Ready To Satisfy Your <span>Craving?</span></h2>
+        <p>
+          Delicious fries, juicy burgers, and refreshing drinks are just a click
+          away.
+        </p>
+        <a href="menu.html" class="hero-btn"> Explore Menu </a>
+      </div>
+    </section>
+
+    <!---Footer-->
+    <footer class="text-center p-3 bottom text-white bg-dark">
+      <div>&copy;2026 Curly <span>Fries</span> - Made To Crave.</div>
+    </footer>
+
+    <!---script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!---aos script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

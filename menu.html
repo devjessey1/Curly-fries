@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Our Menu - Curly Fries</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive Custom CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="assets/images/logo1.png"
+            class="logo-img"
+            alt="Curly Fries"
+          />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div
+          class="offcanvas offcanvas-start bg-dark text-white"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Curly <span>Fries</span>
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="menu.html">
+                  Menu
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html"> About Us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact"> Contact </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="cart.html">
+                  Cart
+                  <span id="cartCount" class="cart-count">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================
+         END OF NAVBAR
+    ========================== -->
+
+    <!-- =========================
+         MENU HEADER
+    ========================== -->
+    <section class="menu-header py-5">
+      <div class="container text-center">
+        <h1>Our <span>Menu</span></h1>
+        <p>Delicious meals made to satisfy every craving.</p>
+      </div>
+    </section>
+
+    <main class="menu-filter pb-5">
+      <div class="container">
+        <div class="filter-wrapper">
+          <!-- Category Area -->
+          <div class="category-area">
+            <!-- Mobile Filter Button -->
+            <button
+              class="filter-toggle"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#categoryMenu"
+              aria-expanded="false"
+              aria-controls="categoryMenu"
+            >
+              <span>Filter</span>
+              <span>⌄</span>
+            </button>
+
+            <!-- Categories -->
+            <div class="category-filter collapse d-md-flex" id="categoryMenu">
+              <button
+                type="button"
+                class="category-btn active"
+                data-category="all"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                class="category-btn"
+                data-category="burgers"
+              >
+                Burgers
+              </button>
+              <button type="button" class="category-btn" data-category="fries">
+                Fries
+              </button>
+              <button
+                type="button"
+                class="category-btn"
+                data-category="sandwiches"
+              >
+                Sandwiches
+              </button>
+              <button type="button" class="category-btn" data-category="drinks">
+                Drinks
+              </button>
+            </div>
+          </div>
+
+          <!-- Search Box -->
+          <div class="search-box">
+            <input
+              type="search"
+              id="menuSearch"
+              placeholder="Search our menu..."
+              aria-label="Search our menu"
+            />
+            <button type="button" aria-label="Search">🔍</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MENU ITEMS -->
+    <section class="menu-items">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Burger Fries -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="burgers"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/burger-fries.jpg"
+                class="menu-card-img"
+                alt="Burger Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Burger Fries</h3>
+                <p>
+                  Juicy, flavorful burgers served with crispy golden curly
+                  fries.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 45.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Burger Fries"
+                    data-price="45"
+                    data-image="assets/images/burger-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Burger with Fries -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="burgers"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/b-fries.jpg"
+                class="menu-card-img"
+                alt="Burger with Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Burger with Fries</h3>
+                <p>
+                  Crispy golden curly fries served with a juicy, delicious
+                  burger.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 40.00 </span>
+
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Burger with Fries"
+                    data-price="40"
+                    data-image="assets/images/b-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sweet Fries -->
+          <div class="col-12 col-sm-6 col-lg-4 menu-item" data-category="fries">
+            <div class="menu-card">
+              <img
+                src="assets/images/about1.jpg"
+                class="menu-card-img"
+                alt="Sweet Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Sweet Fries</h3>
+                <p>
+                  Loaded, crispy curly fries packed with bold flavors and
+                  delicious toppings.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 42.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Sweet Fries"
+                    data-price="42"
+                    data-image="assets/images/about1.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sandwich -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="sandwiches"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/sandwich.jpg"
+                class="menu-card-img"
+                alt="Sandwich"
+              />
+              <div class="menu-card-body">
+                <h3>Sandwich</h3>
+                <p>
+                  Fresh, deliciously filled sandwich made for a quick and
+                  satisfying bite.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 25.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Sandwich"
+                    data-price="25"
+                    data-image="assets/images/sandwich.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Potato Fries -->
+          <div class="col-12 col-sm-6 col-lg-4 menu-item" data-category="fries">
+            <div class="menu-card">
+              <img
+                src="assets/images/potatoe-fries.jpg"
+                class="menu-card-img"
+                alt="Potato Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Potato Fries</h3>
+                <p>
+                  Crispy, golden potato fries with a deliciously seasoned
+                  crunch.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 22.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Potato Fries"
+                    data-price="22"
+                    data-image="assets/images/potatoe-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Super Fries -->
+          <div class="col-12 col-sm-6 col-lg-4 menu-item" data-category="fries">
+            <div class="menu-card">
+              <img
+                src="assets/images/super-fries.jpg"
+                class="menu-card-img"
+                alt="Super Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Super Fries</h3>
+                <p>
+                  Crispy loaded fries topped with delicious ingredients and bold
+                  flavors.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 35.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Super Fries"
+                    data-price="35"
+                    data-image="assets/images/super-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!---tonado-fries-->
+          <div class="col-12 col-sm-6 col-lg-4 menu-item" data-category="fries">
+            <div class="menu-card">
+              <img
+                src="assets/images/tonado-fries.jpg"
+                class="menu-card-img"
+                alt="Tonado Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Tonado Fries</h3>
+                <p>
+                  Crispy loaded fries topped with delicious ingredients and bold
+                  flavors.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 30.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Tonado Fries"
+                    data-price="30"
+                    data-image="assets/images/tonado-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!---waffle fries-->
+          <div class="col-12 col-sm-6 col-lg-4 menu-item" data-category="fries">
+            <div class="menu-card">
+              <img
+                src="assets/images/waffle-fries.jpg"
+                class="menu-card-img"
+                alt="Waffle Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Waffle Fries</h3>
+                <p>
+                  Crispy loaded fries topped with delicious ingredients and bold
+                  flavors.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 37.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Waffle Fries"
+                    data-price="37"
+                    data-image="assets/images/waffle-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!---crinkle fries-->
+          <div class="col-12 col-sm-6 col-lg-4 menu-item" data-category="fries">
+            <div class="menu-card">
+              <img
+                src="assets/images/crinkle-fries.jpg"
+                class="menu-card-img"
+                alt="Crinke Fries"
+              />
+              <div class="menu-card-body">
+                <h3>Crinkle Fries</h3>
+                <p>
+                  Crispy loaded fries topped with delicious ingredients and bold
+                  flavors.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 29.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Crinkle Fries"
+                    data-price="29"
+                    data-image="assets/images/crinkle-fries.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicken Sandwich -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="sandwiches"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/chicken-sandwich.avif"
+                class="menu-card-img"
+                alt="Chicken Sandwich"
+              />
+              <div class="menu-card-body">
+                <h3>Chicken Sandwich</h3>
+                <p>
+                  Fresh and deliciously filled with tender chicken for a
+                  satisfying bite.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 35.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Chicken Sandwich"
+                    data-price="35"
+                    data-image="assets/images/chicken-sandwich.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!---close-up-sandwich-->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="sandwiches"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/close-up-sand.jpg"
+                class="menu-card-img"
+                alt="Close-Up Sandwich"
+              />
+              <div class="menu-card-body">
+                <h3>Close-Up Sandwich</h3>
+                <p>
+                  Fresh and deliciously filled with tender chicken for a
+                  satisfying bite.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 40.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Close-Up Sandwich"
+                    data-price="40"
+                    data-image="assets/images/close-up-sand.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Club Sandwich -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="sandwiches"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/club-sandwich.avif"
+                class="menu-card-img"
+                alt="Club Sandwich"
+              />
+              <div class="menu-card-body">
+                <h3>Club Sandwich</h3>
+                <p>
+                  A tasty layered sandwich packed with fresh ingredients and
+                  satisfying flavors.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 38.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Club Sandwich"
+                    data-price="38"
+                    data-image="assets/images/club-sandwich.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crispy Chicken Sandwich -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="sandwiches"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/crispy-chicken.avif"
+                class="menu-card-img"
+                alt="Crispy Chicken Sandwich"
+              />
+              <div class="menu-card-body">
+                <h3>Crispy Chicken Sandwich</h3>
+                <p>
+                  Crispy chicken with fresh toppings and flavorful sauce in a
+                  soft bun.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 40.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Crispy Chicken Sandwich"
+                    data-price="40"
+                    data-image="assets/images/crispy-chicken.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coca-Cola -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="drinks"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/coca-cola.avif"
+                class="menu-card-img"
+                alt="Coca-Cola"
+              />
+              <div class="menu-card-body">
+                <h3>Coca-Cola</h3>
+                <p>Refreshing ice-cold Coca-Cola to complement your meal.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 10.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Coca-Cola"
+                    data-price="10"
+                    data-image="assets/images/coca-cola.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fanta -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="drinks"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/fanta.jpg"
+                class="menu-card-img"
+                alt="Fanta"
+              />
+              <div class="menu-card-body">
+                <h3>Fanta</h3>
+                <p>
+                  A refreshing fruity drink served ice cold with your favorite
+                  meal.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 10.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Fanta"
+                    data-price="10"
+                    data-image="assets/images/fanta.jpg"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sprite -->
+          <div
+            class="col-12 col-sm-6 col-lg-4 menu-item"
+            data-category="drinks"
+          >
+            <div class="menu-card">
+              <img
+                src="assets/images/sprite.avif"
+                class="menu-card-img"
+                alt="Sprite"
+              />
+              <div class="menu-card-body">
+                <h3>Sprite</h3>
+                <p>Crisp and refreshing lemon-lime soda served ice cold.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price"> GH₵ 10.00 </span>
+                  <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-name="Sprite"
+                    data-price="10"
+                    data-image="assets/images/sprite.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--custom script-->
+    <script src="assets/js/menu.js"></script>
+
+    <!-- Cart -->
+    <script src="assets/js/cart.js"></script>
+  </body>
+</html>

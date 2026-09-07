@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart - Curly Fries</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="assets/images/logo1.png"
+            class="logo-img"
+            alt="Curly Fries"
+          />
+        </a>
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start bg-dark text-white"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Curly <span>Fries</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="menu.html"> Menu </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html"> About Us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html"> Contact </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="cart.html">
+                  Cart
+                  <span id="cartCount" class="cart-count">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================
+         CART HEADER
+    ========================== -->
+
+    <section class="cart-header py-5">
+      <div class="container text-center">
+        <h1>Your <span>Cart</span></h1>
+        <p>Review your order before checkout.</p>
+      </div>
+    </section>
+
+    <!-- =========================
+         CART CONTENT
+    ========================== -->
+
+    <main class="cart-section pb-5">
+      <div class="container">
+        <div id="cartContainer">
+          <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cart JS -->
+    <script src="assets/js/cart.js"></script>
+  </body>
+</html>
