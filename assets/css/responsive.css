@@ -17,6 +17,11 @@
         width: 150px;
         padding: 12px 15px;
     }
+
+    .section {
+        padding: 45px 0;
+    }
+
 }
 
 
@@ -44,6 +49,14 @@
 @media (max-width: 767.98px) {
     .about-img {
         height: 300px;
+    }
+
+     .hero-section {
+        padding: 50px 15px 40px;
+    }
+
+    .cta-section {
+        padding: 50px 20px;
     }
 }
 

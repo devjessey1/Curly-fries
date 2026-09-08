@@ -50,9 +50,13 @@ span{
     font-size: 12px;
     font-weight: 600;
 }
+
+.section {
+    padding: 70px 0;
+}
 /*====HERO SECTION===*/
-section{
-    padding: 100px 0;
+.hero-section{
+    padding: 85px 0 60px;
 }
 
 .span{
@@ -333,7 +337,7 @@ h3{
 .cta-section {
     background-color: #222;
     color: #ffffff;
-    padding: 80px 20px !important;
+    padding: 70px 20px;
 }
 
 .cta-section h2 {
