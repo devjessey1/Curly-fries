@@ -51,6 +51,38 @@ span{
     font-weight: 600;
 }
 
+/* ================================
+   MOBILE CART
+================================ */
+
+.mobile-cart {
+    display: none;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.mobile-cart:hover {
+    color: orange;
+}
+
+.mobile-cart .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    
+
+    min-width: 18px;
+    height: 18px;
+    margin-left: 0;
+    padding: 2px 5px;
+
+
+
+    font-size: 11px;
+}
+
 .section {
     padding: 70px 0;
 }
@@ -292,7 +324,7 @@ h3{
 }
 
 .sub-section{
-    font-size: 15px;
+    font-size: 20px;
 }
 .testimonial-card {
     height: 100%;

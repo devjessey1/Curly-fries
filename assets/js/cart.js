@@ -72,18 +72,16 @@ function saveCart() {
 // ================================
 
 function updateCartCount() {
-
-    const cartCount = document.getElementById("cartCount");
-
-    if (!cartCount) return;
+    const cartCounts = document.querySelectorAll(".cart-count");
 
     const totalItems = cart.reduce(
         (total, item) => total + item.quantity,
         0
     );
 
-    cartCount.textContent = totalItems;
-
+    cartCounts.forEach((count) => {
+        count.textContent = totalItems;
+    });
 }
 
 
