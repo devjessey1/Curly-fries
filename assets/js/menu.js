@@ -9,9 +9,8 @@ const searchInput = document.getElementById("menuSearch");
 let selectedCategory = "all";
 
 
-// ================================
+
 // FILTER MENU ITEMS
-// ================================
 
 function filterMenu() {
 
