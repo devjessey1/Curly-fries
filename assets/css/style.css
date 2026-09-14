@@ -60,6 +60,7 @@ span{
     display: inline-flex;
     align-items: center;
     width: fit-content;
+    color: #fff;
 }
 
 .cart-icon i {
