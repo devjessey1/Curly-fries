@@ -2,17 +2,10 @@
     MOBILE VIEWS
 ============================================================ */
 @media (max-width: 991.98px) {
-
-    .mobile-cart {
-        display: block;
+    .cart-icon {
         margin-left: auto;
-        margin-right: 15px;
+        margin-right: 10px;
     }
-
-    .desktop-cart {
-        display: none;
-    }
-
 }
 
 
